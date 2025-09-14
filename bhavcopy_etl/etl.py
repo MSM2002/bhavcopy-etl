@@ -3,15 +3,15 @@
 from datetime import timedelta
 import polars as pl
 
-from bhavcopy-etl.playwright_utils import fetch_headers
-from bhavcopy-etl.downloader_async import (
+from bhavcopy_etl.playwright_utils import fetch_headers
+from bhavcopy_etl.downloader_async import (
     download_bhavcopies,
     download_corporate_actions,
     download_delisted_companies,
 )
-from bhavcopy-etl.adjustments import apply_adjustments
-from bhavcopy-etl.parquet_utils import write_parquet_file
-from bhavcopy-etl.calendar import get_last_trading_day
+from bhavcopy_etl.adjustments import apply_adjustments
+from bhavcopy_etl.parquet_utils import write_parquet_file
+from bhavcopy_etl.calendar_utils import get_last_trading_day
 
 
 class BhavcopyETL:
