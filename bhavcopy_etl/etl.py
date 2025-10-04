@@ -11,7 +11,7 @@ from bhavcopy_etl.downloader_async import (
 )
 from bhavcopy_etl.adjustments import apply_adjustments
 from bhavcopy_etl.parquet_utils import write_parquet_file
-from bhavcopy_etl.calendar_utils import get_last_trading_day
+from bhavcopy_etl.dates import get_last_trading_day
 
 
 class BhavcopyETL:
